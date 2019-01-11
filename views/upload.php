@@ -11,10 +11,16 @@
     return $output;
 
     function upload(){
-        $out = "<pre>";
-        $out .= print_r($_FILES, true);
-        $out .="</pre>";
+        include_once("./classes/uploader-class.php");
+        $uploader = new Upload("image-data");
+        $uploader->saveIn("img");
+        $fileUpload = $uploader->save();
 
+        if($fileUpload){
+            $out  = "new img uploaded";
+        }else{
+            $out  = "something went wrong";
+        }
         return $out;
     }
 
