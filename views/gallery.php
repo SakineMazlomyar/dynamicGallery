@@ -27,7 +27,7 @@
 
                 $out .="<li><img src='$src' /> </li>";
             }
-
+            //Then we do the same thing on the next picture
             $filesInFolder->next();
         }
         $out .= "</ul>";
