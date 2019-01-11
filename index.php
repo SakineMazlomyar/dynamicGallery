@@ -5,8 +5,8 @@
 
     $pageData->title = "Dynamic img gallry";
     $pageData->content = include_once("./views/navigation.php");
-    $pageData->addCss('./css/style1.css');
-    $pageData->addCss('./css/style2.css');
+    $pageData->addCss('./css/body.css');
+    $pageData->addCss('./css/navigation.css');
 
     $userClicked = isset($_GET['page']);;
     if( $userClicked){
