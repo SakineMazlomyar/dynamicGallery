@@ -1,6 +1,6 @@
 <?php
     // We import the class file for accessing the varaibles we need
-    include("./class/class.php");
+    include("./classes/class.php");
     $pageData = new Page_Data();
 
     $pageData->title = "Dynamic img gallry";
